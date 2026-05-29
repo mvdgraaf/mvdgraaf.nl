@@ -2,8 +2,6 @@ services:
   site:
     build: .
     restart: always
-    depends_on:
-      - matomo
     ports:
       - "8080:80"
     environment:
